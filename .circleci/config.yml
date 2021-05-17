@@ -8,4 +8,9 @@ jobs:
       - checkout
       - run:
           command: npm install
-          
+
+workflows:
+  version: 2
+  my_workflow_for_currency:
+    jobs:
+      - build_api
