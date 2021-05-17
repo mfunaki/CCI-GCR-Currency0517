@@ -1,0 +1,11 @@
+version: 2.1
+
+jobs:
+  build_api:
+    docker:
+      - image: 'cimg/node:current'
+    steps:
+      - checkout
+      - run:
+          command: npm install
+          
